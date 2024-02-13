@@ -1,0 +1,40 @@
+.ad-details-container {
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin: 10px 20px;
+  padding: 20px;
+}
+
+.ad-button {
+  background-color: blue;
+  color: #fff;
+  font-size: 16px;
+  padding: 8px;
+  font-weight: bold;
+}
+
+.advice {
+  font-size: 24px;
+  color: blue;
+  font-weight: 600;
+}
+.talent {
+  font-size: 16px;
+  font-weight: 500;
+  color: #aaa;
+}
+
+.diversity {
+  font-weight: 500;
+  color: #322525;
+}
+.company-name {
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 1.6;
+  color: blue;
+}

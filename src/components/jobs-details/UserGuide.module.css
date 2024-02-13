@@ -1,0 +1,50 @@
+.user-guide-container {
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #fff;
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 32px 12px;
+}
+.title {
+  font-size: 16px;
+  color: #171a1f;
+  line-height: 1.63;
+}
+.scenario-container {
+  display: flex;
+  gap: 10px;
+}
+.scenario-cards-container {
+  display: flex;
+  gap: 16px;
+}
+.scenario-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin: 20px 0px;
+}
+
+.scenario-title {
+  font-size: 12px;
+  line-height: 1.67;
+  color: #171a1f;
+}
+.scenario-description {
+  font-size: 12px;
+  line-height: 1.42;
+  color: #9095a1;
+}
+.read-more-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.read-more-text {
+  font-size: 12px;
+  line-height: 1.67;
+  color: #9095a1;
+}

@@ -1,0 +1,20 @@
+.input {
+  all: unset;
+  background-color: red;
+  border-radius: 8px;
+  box-shadow: 0 0 1px 0 rgba(23, 26, 31, 0.07), 0 0 2px 0 rgba(23, 26, 31, 0.12);
+  border: solid 1px #9095a0;
+  background-color: #fff;
+  font-family: Manrope;
+  font-size: 16px;
+  line-height: 1.63;
+  flex: 1;
+  padding: 4px 16px;
+}
+
+input::placeholder {
+  font-family: Manrope;
+  font-size: 14px;
+  line-height: 1.63;
+  color: #bdc1ca;
+}

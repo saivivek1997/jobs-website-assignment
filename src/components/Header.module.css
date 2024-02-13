@@ -1,0 +1,49 @@
+/* header */
+.header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+.logo {
+  height: 80px;
+  width: auto;
+  object-fit: cover;
+}
+/* 
+menu-container */
+
+.menu-container {
+  display: flex;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  gap: 30px;
+}
+
+.menu-item {
+  font-size: 18px;
+  line-height: 1.56;
+  color: #171a1f;
+}
+
+.user-icon-container {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  gap: 10px;
+}
+
+.user-icon-container .notification-icon {
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+}
+
+.user-icon-container img {
+  height: 70px;
+  width: 70px;
+  cursor: pointer;
+}

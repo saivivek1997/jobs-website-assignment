@@ -1,0 +1,37 @@
+.interview-calls-container {
+  background-color: #fff8e9;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  gap: 10px;
+  margin: 16px;
+  position: relative;
+}
+.interview-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.interview-question {
+  font-weight: bold;
+  font-size: 24px;
+  color: #000;
+}
+.interview-benefit {
+  font-weight: 400;
+  font-size: 16px;
+  flex: 1;
+}
+.ask-button {
+  border-radius: 5px 25px;
+  background-color: #694ea6;
+  color: #fff;
+  padding: 16px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+}

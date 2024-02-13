@@ -1,0 +1,27 @@
+.corporate-profile-container {
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #fff;
+  margin: 20px 10px;
+  padding: 30px;
+}
+.corporate-profile-title {
+  font-size: 18px;
+  line-height: 1.56;
+  color: #171a1f;
+}
+.corporate-profile-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.corporate-profile-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.corporate-profile-item {
+  display: flex;
+  gap: 10px;
+}

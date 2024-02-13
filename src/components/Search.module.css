@@ -1,0 +1,34 @@
+.search {
+  padding: 64px;
+  background-color: #406882;
+}
+
+.search-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.search-title {
+  font-family: Lexend;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 1.54;
+  color: #fff;
+}
+
+.search-form {
+  display: flex;
+  gap: 18px;
+  width: 100%;
+  align-items: center;
+}
+.advanced-search-title {
+  font-size: 18px;
+  line-height: 1.56;
+  color: #fff;
+  opacity: 0.8;
+}

@@ -1,0 +1,66 @@
+.profile-container {
+  padding: 20px 12px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #fff;
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+}
+.profile-image {
+  width: 100%;
+  height: 90px;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+}
+
+.user-name {
+  font-size: 18px;
+  line-height: 1.56;
+  color: #5a7c92;
+}
+.user-designation {
+  font-size: 16px;
+  line-height: 1.63;
+  color: #171a1f;
+}
+.user-company {
+  font-size: 16px;
+  line-height: 1.63;
+  color: #565d6d;
+}
+.card {
+  display: flex;
+  gap: 8px;
+}
+.button-center {
+  text-align: center;
+}
+
+.score-image {
+  width: 163px;
+  height: 163px;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.rating-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.star {
+  font-size: 16px;
+  line-height: 1.63;
+  color: #ffcb00;
+  display: flex;
+}
+.last-visted {
+  font-size: 16px;
+  line-height: 1.63;
+  color: #171a1f;
+}

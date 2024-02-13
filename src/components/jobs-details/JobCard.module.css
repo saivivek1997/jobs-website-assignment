@@ -1,0 +1,35 @@
+.job-card {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.job-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 16px;
+  line-height: 1.63;
+}
+.job-title {
+  color: #5a7c92;
+}
+.job-location {
+  color: #171a1f;
+}
+.job-skills {
+  font-size: 14px;
+  line-height: 1.71;
+  color: #565d6d;
+}
+.posted-info {
+  font-size: 12px;
+  line-height: 1.67;
+  color: #171a1f;
+  align-self: flex-end;
+  position: absolute;
+  top: 80px;
+  right: 0;
+}
