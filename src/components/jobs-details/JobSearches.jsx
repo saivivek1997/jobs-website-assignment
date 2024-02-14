@@ -2,6 +2,7 @@ import React from "react";
 import JobSearchCard from "./JobSearchCard";
 import Icon1 from "../../assets/icon1.png";
 import Icon2 from "../../assets/icon2.png";
+import styles from "./JobSearches.module.css";
 
 const jobSearchesData = [
   {
@@ -41,15 +42,10 @@ const jobSearchesData = [
     ],
   },
 ];
-const styles = {
-  display: "flex",
-  gap: "10px",
-  marginTop: "10px",
-};
 
 function JobSearches() {
   return (
-    <div style={styles}>
+    <div className={styles.container}>
       {jobSearchesData.map((jobSearch) => (
         <JobSearchCard
           key={jobSearch.id}

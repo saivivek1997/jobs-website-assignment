@@ -30,6 +30,17 @@
   color: #171a1f;
   align-self: flex-end;
   position: absolute;
-  top: 80px;
+  top: 100px;
   right: 0;
+}
+@media screen and (max-width: 600px) {
+  .job-card {
+    flex-wrap: wrap;
+    flex: 1;
+  }
+  .posted-info {
+    display: flex;
+    position: static;
+    align-self: center;
+  }
 }

@@ -39,3 +39,21 @@
   line-height: 1.63;
   color: #171a1f;
 }
+
+@media screen and (max-width: 1200px) {
+  .jobs-and-posting-container {
+    flex-direction: column;
+  }
+  .anotherdesc {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .description {
+    font-size: 14px;
+  }
+  .anotherdesc {
+    font-size: 12px;
+  }
+}

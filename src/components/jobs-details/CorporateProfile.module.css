@@ -25,3 +25,17 @@
   display: flex;
   gap: 10px;
 }
+.corporate-profile-image {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .corporate-profile-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .corporate-profile-details {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

@@ -35,3 +35,15 @@
   bottom: 0;
   cursor: pointer;
 }
+
+@media screen and (max-width: 1100px) {
+  .interview-calls-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ask-button {
+    position: relative;
+  }
+}

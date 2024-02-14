@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./UserGuide.module.css";
 import Career1Image from "../../assets/career1.png";
 import Career2Image from "../../assets/career2.png";
@@ -7,6 +7,9 @@ import Career4Image from "../../assets/career4.png";
 import Career5Image from "../../assets/career5.png";
 
 import { FaArrowRight } from "react-icons/fa";
+import { FaChevronCircleLeft } from "react-icons/fa";
+import { FaChevronCircleRight } from "react-icons/fa";
+import useScreenSize from "../../hooks/useScreenSize";
 
 const userGuideData = [
   {
@@ -25,7 +28,7 @@ const userGuideData = [
   },
   {
     id: 3,
-    image: Career3Image,
+    image: Career1Image,
     title: "Create Cv",
     description: "Professionally written resume + cover letter",
     bgColor: "#f9fbf9",
@@ -46,14 +49,36 @@ const userGuideData = [
 ];
 
 const UserGuide = () => {
+  const [slicedNumber, setSlicedNumber] = useState(0);
+  const screenSize = useScreenSize();
+
+  function assignSliceNumber() {
+    let count = 0;
+    let { width } = screenSize;
+    if (width >= 1300) count = 5;
+    if (width <= 1299) count = 4;
+    if (width <= 1200) count = 3;
+    if (width <= 1054) count = 2;
+    if (width <= 950) count = 1;
+    setSlicedNumber(count);
+  }
+  useEffect(() => {
+    assignSliceNumber();
+  }, [screenSize]);
+
   return (
     <div className={styles["user-guide-container"]}>
       <h2 className={styles.title}>
         User Guide To Use the Application Scenarios
       </h2>
-      <div className={styles["scenario-container"]}>
-        <div className={styles["scenario-cards-container"]}>
-          {userGuideData.map(({ id, image, title, description, bgColor }) => (
+      <div className={styles["scenario-cards-container"]}>
+        <div className={styles["left-arrow"]}>
+          {" "}
+          <FaChevronCircleLeft />{" "}
+        </div>
+        {userGuideData
+          .slice(0, slicedNumber)
+          .map(({ id, image, title, description, bgColor }) => (
             <div
               className={styles["scenario-card"]}
               style={{ backgroundColor: bgColor }}
@@ -70,6 +95,9 @@ const UserGuide = () => {
               </div>
             </div>
           ))}
+        <div className={styles["right-arrow"]}>
+          {" "}
+          <FaChevronCircleRight />{" "}
         </div>
       </div>
     </div>

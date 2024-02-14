@@ -7,7 +7,7 @@
   padding: 20px 30px;
 }
 .logo {
-  height: 80px;
+  max-height: 60px;
   width: auto;
   object-fit: cover;
 }
@@ -46,4 +46,10 @@ menu-container */
   height: 70px;
   width: 70px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1060px) {
+  .menu-item {
+    font-size: 12px;
+  }
 }

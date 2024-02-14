@@ -2,3 +2,10 @@
   display: grid;
   grid-template-columns: 350px 1fr;
 }
+
+@media screen and (max-width: 800px) {
+  .layout-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
